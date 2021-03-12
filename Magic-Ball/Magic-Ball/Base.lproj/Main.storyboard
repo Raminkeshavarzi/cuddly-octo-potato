@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,23 +12,20 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Magic_Ball" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tell Me What To Do" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyH-Ji-FsZ">
-                                <rect key="frame" x="78" y="91" width="259" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tell Me What To Do" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyH-Ji-FsZ">
+                                <rect key="frame" x="87.666666666666686" y="69" width="215" height="31.666666666666671"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ball1" translatesAutoresizingMaskIntoConstraints="NO" id="03Q-M8-gLp">
-                                <rect key="frame" x="29" y="306" width="357" height="307"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball1" translatesAutoresizingMaskIntoConstraints="NO" id="03Q-M8-gLp">
+                                <rect key="frame" x="42.666666666666657" y="285.66666666666669" width="305" height="273.00000000000006"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="th2-YR-c7m">
-                                <rect key="frame" x="117" y="712" width="180" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="th2-YR-c7m">
+                                <rect key="frame" x="152.66666666666666" y="780" width="85" height="40"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <state key="normal" title="ASK ME">
                                     <color key="titleColor" red="0.6618331755050505" green="0.092849416898297135" blue="0.1687565151179565" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -40,6 +37,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.60771209072680932" green="0.80562672185987916" blue="0.90232402146464641" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="xyH-Ji-FsZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="DKf-Pa-8fr"/>
+                            <constraint firstItem="th2-YR-c7m" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-30" id="FQF-U1-Ji5"/>
+                            <constraint firstItem="03Q-M8-gLp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HtL-Xs-x5G"/>
+                            <constraint firstItem="03Q-M8-gLp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Qv4-vY-qrV"/>
+                            <constraint firstItem="th2-YR-c7m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VlK-cP-3WR"/>
+                            <constraint firstItem="xyH-Ji-FsZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iNT-pc-X0Q"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="imgView" destination="03Q-M8-gLp" id="yKD-me-oBW"/>
@@ -51,6 +56,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ball1" width="305" height="273.5"/>
+        <image name="ball1" width="305" height="273.66665649414062"/>
     </resources>
 </document>
